@@ -1,5 +1,7 @@
 # Limit Order Book Trading Agent
 
+![tests](https://github.com/amangrewal1/limit-order-book-trading-agent/actions/workflows/test.yml/badge.svg) ![license](https://img.shields.io/badge/license-MIT-blue)
+
 A simulated limit order book (LOB) exchange with a market-making agent that adaptively chooses between liquidity provision and market taking using **order-flow imbalance (OFI)** as its primary signal.
 
 ## Highlights
