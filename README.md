@@ -25,6 +25,10 @@ A simulated limit order book (LOB) exchange with a market-making agent that adap
 - **Inventory drawdown reduced by 43% vs the static quoter** — inventory-aware skew works as designed.
 - **PnL variance ~2.5× tighter** than either baseline — quote widening on strong OFI avoids the large adverse-selection events that hurt the static quoter.
 
+![mid price, inventory, and PnL for the three agents on a seeded run](experiments/results.png)
+
+*Top: mid-price series with inventory trajectories. Middle: agent PnL over one 2000-step episode (seed 42). Bottom: inventory drawdown. The adaptive agent's inventory stays near zero thanks to OFI-driven skew.*
+
 (Run `python3 experiments/run_simulations.py --sims 10000 --steps 500 --workers 4` to reproduce.)
 
 ## Project layout
