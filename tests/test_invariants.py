@@ -11,5 +11,7 @@ def test_best_bid_le_best_ask():
 
 def test_empty_book_properties():
     book = OrderBook()
-    assert book.depth(Side.BID) == 0
-    assert book.depth(Side.ASK) == 0
+    assert book.bid_volume() == 0
+    assert book.ask_volume() == 0
+    assert book.mid() is None
+    assert book.spread() is None
